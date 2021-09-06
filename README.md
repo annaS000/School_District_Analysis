@@ -90,6 +90,10 @@ Some of the this I did to change the original code included:
 ## **Results** 
 * **How is the district summary affected?**
 
+    
+
+
+
     ##### **District Summary Before**
     ![District Summary Before](https://raw.githubusercontent.com/annaS000/School_District_Analysis/main/Resources/distr_sum_before.png) 
 
@@ -99,6 +103,7 @@ Some of the this I did to change the original code included:
     ##### **District Summary Comparison**
     > ##### Here we can see the **District Summary** data frame before and after the THS 9th grade scores have been converted into NaNs. While there are some numbers that appear different in the after chart, this difference is so small that it would not be considered a significant change. If the formatting had rounded to the whole number the charts would be identical.
 
+    ###### [back to summary](#summary)
     <br/>
 
 * **How is the school summary affected?**
@@ -127,6 +132,7 @@ Some of the this I did to change the original code included:
     ##### **New School Summary Comparison**
     > ##### Now that we have fixed those values, we can see there was still a very slight fractional change but, like the district summary, I would consider this negligable.
 
+    ###### [back to summary](#summary)
 <br/>
 
 
@@ -156,6 +162,7 @@ Some of the this I did to change the original code included:
     ##### **Top and Bottom 5 Schools After**
     > ##### Even after the changes to the scores were made, THS remained in second place.
 
+    ###### [back to summary](#summary)
     <br/>
 
 * **How does replacing the ninth-grade scores affect the following:**
@@ -174,16 +181,17 @@ Some of the this I did to change the original code included:
         <img src="https://raw.githubusercontent.com/annaS000/School_District_Analysis/main/Resources/bygradereadbefore.png" width="200" height="250" >  <img src="https://raw.githubusercontent.com/annaS000/School_District_Analysis/main/Resources/bygradereadafter.png" width="200" height="250" >
         ##### **Before and After Reading Scores by Grade**
         > ##### There are no changes in reading scores by grade after taking out the THS ninth grade scores.
-    
+
+        ###### [back to summary](#summary)
     <br/>
 
     * **Scores by school spending:**
-        #### **Spending Summary Before (No Formatting)**
+        #### **Spending Summary Before No Formatting**
         ![](https://raw.githubusercontent.com/annaS000/School_District_Analysis/main/Resources/noformatspendingbefore.png)
         #### **Spending Summary Before**
         ![](https://raw.githubusercontent.com/annaS000/School_District_Analysis/main/Resources/spendingbefore.png)  
 
-        #### **Spending Summary After (No Formatting)**
+        #### **Spending Summary After No Formatting**
         ![](https://raw.githubusercontent.com/annaS000/School_District_Analysis/main/Resources/noformatspendingafter.png)
         #### **Spending Summary After**
         ![](https://raw.githubusercontent.com/annaS000/School_District_Analysis/main/Resources/spendingafter.png)
@@ -191,32 +199,34 @@ Some of the this I did to change the original code included:
         ##### **Spending Summary Comparison**
         > ##### The **Scores by Spending Summary** does not have any changes
 
+        ###### [back to summary](#summary)
         <br/>
 
     * **Scores by school size:**
-        #### **Size Summary Before (No Formatting)**
+        #### **Size Summary Before No Formatting**
         ![](https://raw.githubusercontent.com/annaS000/School_District_Analysis/main/Resources/noformatsizebefore.png)
         #### **Size Summary Before**
         ![](https://raw.githubusercontent.com/annaS000/School_District_Analysis/main/Resources/sizebefore.png)  
 
-        #### **Size Summary After (No Formatting)**
+        #### **Size Summary After No Formatting**
         ![](https://raw.githubusercontent.com/annaS000/School_District_Analysis/main/Resources/noformatsizeafter.png)
         #### **Size Summary After**
         ![](https://raw.githubusercontent.com/annaS000/School_District_Analysis/main/Resources/sizeafter.png)
 
         ##### **Size Summary Comparison**
         > ##### There are virtually no changes in the **Scores by School Size Summary**
-    
+
+        ###### [back to summary](#summary)
     <br/>
     
     * **Scores by school type:**
 
-        #### **Type Summary Before (No Formatting)**
+        #### **Type Summary Before No Formatting**
         ![](https://raw.githubusercontent.com/annaS000/School_District_Analysis/main/Resources/noformattypebefore.png)
         #### **Type Summary Before**
         ![](https://raw.githubusercontent.com/annaS000/School_District_Analysis/main/Resources/typebefore.png)  
 
-        #### **Type Summary After (No Formatting)**
+        #### **Type Summary After No Formatting**
         ![](https://raw.githubusercontent.com/annaS000/School_District_Analysis/main/Resources/noformattypeafter.png)
         #### **Type Summary After**
         ![](https://raw.githubusercontent.com/annaS000/School_District_Analysis/main/Resources/typeafter.png)
@@ -227,8 +237,16 @@ Some of the this I did to change the original code included:
 ---
 
 ## Summary
-Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
-1. text
-2. text
-3. text
-4. text
+To recap, here are some of the changes that were in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs:
+
+1. One change that was made in the school district analysis was having to recalculate the passing rates for 10th-12th grades in Thomas High School since the total number of students went down from excluding the 9th grade class.
+2. There were some fractional decreases in the THS scores and passing rates in all of the summary charts after the students were dropped from the data set. These decreases become unnoticable after the charts are rounded from the formatting.
+3. In the Scores by Grade Charts the only difference is there a `nan` in the spot where the THS 9th grade average used to be because there is not data for that calculation anymore.
+4. Overall, it was expected to have majority of the data in the summaries to stay the same because only some of the results are affected by the Thomas High School student count and scores. THS's statistics that are specific to their school would be changed by eliminating a whole grade because that affects them directly. As for other results, any statistics that are dependent on categories that THS fits in would also be affected.
+    * The [District School Summary](#district-summary-before) was affect because THS is included in the calculations for that chart.
+    * In the [Per School Summary](#school-summary-before), the only data subject to change was the THS row.
+    * The [Top and Bottom 5](#top-5-schools-before) charts stayed the same because the diffences made to THS's stats were not big enough to raise or lower their standing.
+    * The [Spending per Student Summary](#spending-summary-before-no-formatting) only had changes in the **$630-$644** row because that was the category that THS fell in with $638 per student.
+    * The [School Size Summary](#size-summary-before-no-formatting) saw change in the **medium size** row because the school has 1,635 students.
+    * The [School Type Summary](#type-summary-before-no-formatting) chart changed in the **Charter** row because THS is a charter school.
+
